@@ -1,4 +1,4 @@
 - name: install "{{components}}"
   ansible.builtin.package:
-    - name: "{{component}}"
-      state: present
+   - name: nginx
+     state: present
