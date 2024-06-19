@@ -1,6 +1,9 @@
-- name: "install {{components}}"
+- name: Install specified components
   hosts: localhost
   become: yes
+  vars:
+    components:
+      - nginx  # Example role
   roles:
-    - "{{components}}"
-
+    - "{{ item }}"
+  loop: "{{ components }}"

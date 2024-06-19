@@ -1,4 +1,10 @@
-- name: install "{{components}}"
-  ansible.builtin.package:
-   - name: nginx
-     state: present
+- name: Install packages
+  hosts: all
+  vars:
+    components:
+      - nginx
+  tasks:
+    - name: Ensure required packages are installed
+      ansible.builtin.package:
+        name: "{{ components }}"
+        state: present
