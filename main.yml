@@ -1,5 +1,5 @@
 - name: installing packages
-  hosts: all
+  hosts: inventory
   become: yes
   roles: 
     - tasks
