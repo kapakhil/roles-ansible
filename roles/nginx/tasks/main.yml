@@ -1,9 +1,9 @@
 - name: install tomcat
-  ansible.buitin.package:
+  ansible.builtin.package:
     - name: tomcat
       state: present
 
 - name: install curl
-  ansible.buitin.package:
+  ansible.builtin.package:
     - name: curl
       state: present
