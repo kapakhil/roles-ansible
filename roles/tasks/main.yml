@@ -1,4 +1,4 @@
-- name: install tomcat
+- name: install git 
   ansible.builtin.package:
     - name: tomcat
       state: present
@@ -6,4 +6,4 @@
 - name: install curl
   ansible.builtin.package:
     - name: curl
-      state: present
+      state: present      
