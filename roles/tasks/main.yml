@@ -1,6 +1,6 @@
 - name: install git 
   ansible.builtin.package:
-    - name: git
+    - name: vim
       state: present
 
 - name: install curl
